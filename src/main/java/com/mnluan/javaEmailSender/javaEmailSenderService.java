@@ -16,10 +16,7 @@ public class javaEmailSenderService {
 	@Autowired
 	private JavaMailSender javaMailSender;
 	
-	public void sendMail(String toEmail,
-						 String body,
-						 String subject,
-						 String attachment)throws MessagingException {
+	public void sendMail(String toEmail, String body, String subject, String attachment)throws MessagingException {
 		MimeMessage mimeMSG = javaMailSender.createMimeMessage();
 		MimeMessageHelper msgHelper = new MimeMessageHelper(mimeMSG, true);
 		
