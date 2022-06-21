@@ -20,7 +20,7 @@ public class javaEmailSenderService {
 		MimeMessage mimeMSG = javaMailSender.createMimeMessage();
 		MimeMessageHelper msgHelper = new MimeMessageHelper(mimeMSG, true);
 		
-		msgHelper.setFrom("sender email here");
+		msgHelper.setFrom("YourEmail@Here.com"); //Edit this line with your email address
 		msgHelper.setTo(toEmail);
 		msgHelper.setText(body);
 		msgHelper.setSubject(subject);

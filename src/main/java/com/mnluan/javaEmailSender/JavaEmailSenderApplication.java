@@ -20,6 +20,7 @@ public class JavaEmailSenderApplication {
 	
 	@EventListener(ApplicationReadyEvent.class)
 	public void triggerEmail()throws MessagingException{
-		emailSenderService.sendMail("recipientEmail@example.com", "Messeger Here", "Subject Here", "location//from//archive.pdf");
+		//replace the fields below with the information from your message
+		emailSenderService.sendMail("RecipientEmailHere@exemple.com", "Messeger", "Subject", "Location\\To\\Archive\\Here.pdf");
 	}
 }
